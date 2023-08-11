@@ -1,9 +1,9 @@
 FROM horih/satysfi:latest 
 
-RUN eval $(opam env) && opam update && opam install \
+RUN eval $(opam env) && opam update && opam install -y\
     satysfi-class-stjarticle \
-    latexcmds \
-    easytable \
-    figbox \
+    satysfi-latexcmds \
+    satysfi-easytable \
+    satysfi-figbox \
     && satyrographos install
 
