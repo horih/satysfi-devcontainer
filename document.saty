@@ -1,0 +1,17 @@
+@require: class-template/class-template
+@require: color
+@require: itemize
+@require: latexcmds/latexcmds
+
+open ClassTemplate
+in
+
+document(default-setting
+    |> set-title {  }
+    |> set-author {  }
+    |> set-abstract '<>
+    |> set-doc-link-color (1pt, Color.red)
+    |> set-url-link-color (1pt, Color.blue))'<
+
+    +section<>
+    >
