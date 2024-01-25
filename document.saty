@@ -13,18 +13,6 @@ open EasyTableAlias
 open FigBox
 open LatexCmds
 let-inline ctx \br = inline-fil ++ embed-block-breakable ctx (block-skip (get-natural-width (read-inline ctx { m })))
-let-inline ctx \line num =
-    read-inline ctx {
-    \br;
-    \scalebox ?:(1.1) ?:(1.1) { #num;行目: }
-    \br;
-    }
-let-inline ctx \lines num1 num2 =
-    read-inline ctx {
-    \br;
-    \scalebox ?:(1.1) ?:(1.1) { #num1;行目〜#num2;行目: }
-    \br;
-    }
 in
 
 document(default-setting
