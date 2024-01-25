@@ -22,5 +22,5 @@ document(default-setting
     |> set-doc-link-color (1pt, Color.red)
     |> set-url-link-color (1pt, Color.blue))'<
 
-    +section<>
+    +section{}<>
     >
